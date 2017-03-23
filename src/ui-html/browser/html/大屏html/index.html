@@ -1,0 +1,516 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>         
+         <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+         <meta http-equiv="X-UA-Comapptible" content="IE=Edge">
+         <link href="css/style.css" rel="stylesheet">
+         <title>听云Browser大屏</title>  
+     </head>
+     <body>
+     <div class="bottom-bg"></div>
+     <div class="main">
+         <div class="head clearfix">
+            <div class="logo">
+              <span class="logo-img"></span>
+            </div> 
+            <div class="h-title">
+                <div class="title-con">
+                    <h3 class="logo-right">Browser应用性能监控大屏</h3>
+
+                </div>
+            </div>
+            <div class="h-time">
+                <span class="time-icon">最近30分钟</span>
+            </div>   
+         </div>
+         <div class="con clearfix">
+            <div class="con-left">
+                <!--平均响应时间 str-->
+                <div class="con-response con-border">
+                    <div class="con-head">
+                        <h2 class="con-htxt">平均响应时间</h2>
+                        <div class="con-hr">
+                            <i class="con-hcircle green-circle"></i>
+                            <span class="con-hnum">1.63s</span>
+                        </div>
+                    </div>
+                    <!--图表区域 str-->
+                    <div class="con-response-chart">
+                        <img src="images/response-chart.png">
+                    </div>
+                    <!--图表区域 end-->
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--平均响应时间 end-->
+                <!--JS错误 str-->
+                <div class="con-collapse con-border">
+                    <div class="con-head">
+                        <h2 class="con-htxt">JS错误</h2>
+                        <div class="con-hr">
+                            <i class="con-hcircle red-circle"></i>
+                            <span class="con-hnum">300</span>
+                        </div>
+                    </div>
+                    <div class="con-collapse-chart clearfix">
+                        <div class="con-collapse-chartl"></div>
+                        <div class="con-collapse-chartr"><img src="images/collapse-chart.png"></div> 
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--JS错误 end-->
+                <!--访问成功率 str-->
+                <div class="con-neterror con-border">
+                    <div class="con-head">
+                        <h2 class="con-htxt">访问成功率</h2>
+                        <div class="con-hr">
+                            <i class="con-hcircle green-circle"></i>
+                            <span class="con-hnum">6%</span>
+                        </div>
+                    </div>
+                    <div class="con-neterror-chart">
+                        <img src="images/neterror-chart.png">
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--访问成功率 end-->
+                <!--Ajax状态码 str-->
+                <div class="con-http con-border">
+                    <!--网格背景-->
+                    <div class="http-bg"></div>
+                    <div class="con-head">
+                        <h2 class="con-htxt">Ajax状态码</h2>
+                        <div class="con-hr">
+                            <i class="con-hcircle green-circle"></i>
+                            <span class="con-hnum">75%</span>
+                        </div>
+                    </div>
+                    <div class="con-http-chart">
+                        <img src="images/http-chart.png">
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--Ajax状态码 end-->
+            </div> 
+            <div class="con-middle">
+                <!--区域性能概览 str-->
+                <div class="con-performance con-border">
+                    <div class="per-map">
+                        <div class="per-map-title">区域性能概览</div>
+                        <!--dau str-->
+                        <div class="per-dau">
+                            <span class="title-icon title-img"></span>
+                            <h4 class="title-txt">JD-APP-ANDROID</h4>
+                            <h4 class="title-dau">DAU:<span>31231245</span></h4>
+                        </div>
+                        <!--dau end-->
+                        <!--插件区域 str-->
+                        <div class="per-map-con">
+                            <img src="images/performance-chart.png">
+                        </div>
+                        <!--插件区域 end-->
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--区域性能概览 end-->
+                <!--活跃用户区域 str-->
+                <div class="con-active con-border">
+                    <div class="active-map">
+                        <div class="active-map-title">活跃用户区域</div>
+                        <!--插件区域 str-->
+                        <div class="active-map-con">
+                            <img src="images/active-chart.png">
+                        </div>
+                        <!--插件区域 end-->
+                    </div>
+                    <div class="active-txt-wrap">
+                        <ul class="clearfix">
+                            <li>深圳:100000（PV）</li>
+                            <li>南京:100000（PV）</li>
+                            <li>上海:100000（PV）</li>
+                            <li>北京:100000（PV）</li>
+                        </ul>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--活跃用户区域 end-->
+            </div> 
+            <div class="con-right clearfix">
+                <!--section str-->
+                <div class="con-rsection con-border">
+                    <div class="rsection-head">
+                        <i class="con-rectangle color-login"></i>
+                        <h4>登陆</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                    <div class="rsection-head">
+                        <i class="con-rectangle color-registered"></i>
+                        <h4>注册</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                    <div class="rsection-head">
+                        <i class="con-rectangle color-cart"></i>
+                        <h4>加入购物车</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                    <div class="rsection-head">
+                        <i class="con-rectangle color-account"></i>
+                        <h4>结算</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                    <div class="rsection-head">
+                        <i class="con-rectangle color-home"></i>
+                        <h4>首页</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                   <div class="rsection-head">
+                        <i class="con-rectangle color-spike"></i>
+                        <h4>秒杀</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                   <div class="rsection-head">
+                        <i class="con-rectangle color-eleven"></i>
+                        <h4>双11</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                <!--section str-->
+                <div class="con-rsection con-border">
+                   <div class="rsection-head">
+                        <i class="con-rectangle color-discount"></i>
+                        <h4>折扣</h4>
+                    </div>
+                    <div class="rsection-content clearfix">
+                        <!--地图插件区域 str-->
+                        <div class="rsection-cleft">
+                            <img src="images/section-chart.png">
+                        </div>
+                        <!--地图插件区域 end-->
+                        <div class="rsection-cright">
+                            <ul>
+                                <li>
+                                    <span>响应时间:3s</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求次数:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功:999999</span>
+                                    <i></i>
+                                </li>
+                                <li>
+                                    <span>请求成功率:100%</span>
+                                    <i></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--section end-->
+                 <!--关键请求平均响应时间 str-->
+                <div class="con-request con-border">
+                    <h4 class="con-active-head">关键请求平均响应时间</h4>
+                    <!--插件区域 str-->
+                    <div class="request-chart">
+                        <img src="images/request-chart.png">
+                    </div>
+                    <!--插件区域 end-->
+                    <!--四角 小签str-->
+                    <i class="tag tag-tl"></i>
+                    <i class="tag tag-tr"></i>
+                    <i class="tag tag-bl"></i>
+                    <i class="tag tag-br"></i>
+                    <!--四角 小签end-->
+                </div>
+                <!--关键请求平均响应时间 end-->
+            </div> 
+         </div>
+     </div>
+    </body>
+</html>

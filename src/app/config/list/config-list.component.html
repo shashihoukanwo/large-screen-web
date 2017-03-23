@@ -1,0 +1,141 @@
+
+<!--收费提醒 str-->
+<div *ngIf="condition_charge">
+    <div class="layer-front-shade"></div>
+    <div class="layer-front">
+        <div class="charge-remind">
+            <p class="charge-p1">尊敬的***您好：</p>
+            <p class="charge-txt"> 此项目为增值收费服务，如果想使用此服务可联系您的销售或者技术支持，也可以留下您的联系方式，我们主动联系您。</p>
+            <div class="clearfix">
+                <span class="charge-ltxt">您的称呼:</span>
+                <div class="charge-box">
+                    <input class="charge-input" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="clearfix">
+                <span class="charge-ltxt">您的电话:</span>
+                <div class="charge-box">
+                    <input class="charge-input" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="clearfix">
+                <span class="charge-ltxt">所属公司:</span>
+                <div class="charge-box">
+                    <input class="charge-input" type="text" placeholder="">
+                </div>
+            </div>
+            <div class="crs-buttons">
+                <a class="crs-submit" href="javascript:void(0);">提交</a>
+                <a class="crs-cancel" href="javascript:void(0);" (click)="onCloseCharge()">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--收费提醒 end-->
+
+<!--创建大屏 str-->
+<div *ngIf="condition_create">
+    <div class="crs-layer-shade"></div>
+    <div class="crs-layer-front">
+            <form (ngSubmit)="onSubmit()" #configForm="ngForm">
+                <div class="create-screen">
+                    <h4 class="crs-title">创建  {{showFormControls(configForm)}}</h4>
+                    <div class="crs-con">
+                        <div class="clearfix">
+                            <span class="crs-ltxt">选择产品:</span>
+                            <div class="crs-rtxt">
+                                <span class="crs-name crs-name-checked">App用户体验</span>
+                                <span class="crs-name">网站用户体验</span>
+                                <span class="crs-name">模拟用户体验</span>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <span class="crs-ltxt">选择应用:</span>
+                            <div class="crs-check-wrap">
+                                <div class="crs-check-box clearfix">
+                                    <input class="crs-checked" type="text" placeholder="应用一">
+                                    <button class="crs-check-btn" type="button"></button>
+                                </div>
+                                <div class="crs-check-list">
+                                    <ul>
+                                        <li>应用名称详情</li>
+                                        <li class="crs-check-checked">应用名称详情</li>
+                                        <li>应用名称详情</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                            <span class="crs-ltxt">创建大屏名称:</span>
+                            <div class="crs-creat-box">
+                                <input id="name"
+                                       required
+                                       [(ngModel)]="model.name" name="name"
+                                       #name="ngModel"
+                                       class="crs-creat-input"
+                                       type="text"
+                                       placeholder="JD应用监测大屏">
+                            </div>
+                        </div>
+                        <div class="crs-buttons">
+                            <button type="submit" class="btn btn-success" [disabled]="!configForm.form.valid">提交</button>
+                            <a class="crs-cancel" href="javascript:void(0);" (click)="onCloseCreate()">取消</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+    </div>
+</div>
+<!--创建大屏 end-->
+
+<div class="container-fluid main">
+<div class="row main-con">
+    <!--未创建 str-->
+    <div class="not-create clearfix" *ngIf="condition_config">
+        <a class="demo-btn" href="javascript:void(0);">
+            <div class="demo-img"><img src="images/config/demo-img.png"></div>
+            <span class="demo-shade"></span>
+            <span class="demo-txt">Demo预览</span>
+        </a>
+        <a class="create-btn" href="javascript:void(0);" (click)="onCreate()">
+            <span class="create-icon"></span>
+            <h4 class="create-title">创建大屏</h4>
+        </a>
+    </div>
+    <!--未创建 end-->
+    <!--已创建 str-->
+    <div class="already-create clearfix" *ngIf="!condition_config">
+        <a class="al-demo" href="javascript:void(0);">
+            <div class="ald-img"><img src="images/config/demo-img.png"></div>
+            <span class="ald-shade"></span>
+            <span class="ald-txt">Demo预览</span>
+        </a>
+        <a class="al-create" href="javascript:void(0);" (click)="onCreate()">
+            <span class="alc-icon"></span>
+            <h4 class="alc-title">创建听云大屏</h4>
+        </a>
+    </div>
+    <!--已创建 end-->
+    <!--缩略图列表 str-->
+    <div class="screens-wrap" *ngIf="!condition_config">
+        <!--RUM  str-->
+        <div class="screen-sort-wrap">
+            <h5 class="screen-sort">RUM</h5>
+            <div class="row screen-list">
+                <div class="col-lg-2 col-md-3" *ngFor="let config of configs">
+                    <div class="screen-img">
+                        <img class="img-responsive" src="images/config/screen-list.png" >
+                        <span class="sl-shade"></span>
+                        <span class="sl-title">{{config.name}}</span>
+                        <a class="del-btn" href="javascript:void(0);" (click)="onDel(config.id)"></a>
+                    </div>
+                    <button type="button" class="btn btn-default btn-lg btn-block" (click)="onEdit(config.id)">配置/修改</button>
+                    <button type="button" class="btn btn-default btn-lg btn-block" [disabled]="!config.viewStatus">投屏</button>
+                </div>
+            </div>
+        </div>
+        <!--RUM  end-->
+    </div>
+    <!--缩略图列表 end-->
+</div>
+</div>

@@ -1,0 +1,77 @@
+<!--<button (click)="pubEvent()">emiter</button>-->
+<div class="bottom-bg"></div>
+<div class="main">
+    <div class="head clearfix">
+        <!-- <div class="logo">
+            <span class="logo-img"></span>
+            <h3 class="logo-right">APP应用性能监控大屏</h3>
+        </div>
+        <div class="h-title">
+            <div class="title-con">
+                <span class="title-icon title-img"></span>
+                <h4 class="title-txt">JD-APP-ANDROID</h4>
+                <h4 class="title-dau">DAU:<span>31231245</span></h4>
+            </div>
+        </div>
+        <div class="h-time">
+            <span class="time-icon">最近30分钟</span>
+        </div> -->
+        <ls-header></ls-header>
+    </div>
+    <div class="con clearfix">
+        <div class="con-left">
+            <!--平均响应时间 str-->
+            <div class="con-response con-border">
+                <app-rstime [option]="responseTimeOptions"></app-rstime>
+            </div>
+            <!--平均响应时间 end-->
+            <!--崩溃 str-->
+            <div class="con-collapse con-border" style="padding:0px;">
+            	<app-crash [option]="crashOptions"></app-crash>
+            </div>
+            <!--崩溃 end-->
+            <!--网络错误 str-->
+            <div class="con-neterror con-border">
+                <app-neterror [option]="networkErrorOptions"></app-neterror>
+            </div>
+            <!--网络错误 end-->
+            <!--HTTP状态码 str-->
+            <div class="con-http con-border">
+            	<app-httpcode [option]="httpCodeOptions"></app-httpcode>
+            </div>
+            <!--HTTP状态码 end-->
+        </div>
+        <div class="con-middle">
+            <!--区域性能概览 str-->
+            <app-centermap [options]="centerMapOptions"></app-centermap>
+            <!--区域性能概览 end-->
+            <div>
+                <!--活跃用户区域 str-->
+                <active-map [options]="activeMapOptions"></active-map>
+                <!--活跃用户区域 end-->
+                
+                <!--劫持 str-->
+                <app-hijack [option]="hijackOptions"></app-hijack>
+                <!--劫持 end-->
+            </div>
+        </div>
+        <div class="con-right clearfix">
+            <!--section str-->
+            <div *ngFor="let keyOption of keyOptions" class="con-rsection con-border">
+                <app-dymap [option]="keyOption"></app-dymap>
+                <!--四角 小签str-->
+                <i class="tag tag-tl"></i>
+                <i class="tag tag-tr"></i>
+                <i class="tag tag-bl"></i>
+                <i class="tag tag-br"></i>
+                <!--四角 小签end-->
+            </div>
+            <!--section end-->
+            <!--关键请求平均响应时间 str-->
+            <div class="con-request con-border" style="width:611px">
+                <app-avgtime [option]="averageTimeOptions"></app-avgtime>
+            </div>
+            <!--关键请求平均响应时间 end-->
+        </div>
+    </div>
+</div>

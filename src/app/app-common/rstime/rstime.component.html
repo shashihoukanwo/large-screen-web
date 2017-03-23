@@ -1,0 +1,21 @@
+<div class="container-crash" [ngClass]="{'redhigh':redCircle}">
+<div class="con-head">
+    <h2 class="con-htxt">平均响应时间</h2>
+    <div class="con-hr">
+        <i class="con-hcircle green-circle" #rstimecircle></i>
+        <span class="con-hnum">{{timeValue}}</span>
+    </div>
+</div>
+<!--图表区域 str-->
+ <div class="con-response-chart" #rstimemain>
+</div> 
+
+<!--图表区域 end-->
+<!--四角 小签str-->
+<i class="tag tag-tl"></i>
+<i class="tag tag-tr"></i>
+<i class="tag tag-bl"></i>
+<i class="tag tag-br"></i>
+<!--四角 小签end-->
+
+</div>

@@ -1,0 +1,114 @@
+<div class="blue-line" style="min-width: 1900px;"></div>
+<!--header end-->
+<!--preview-main  str-->
+<div class="edit-main">
+    <div class="preview-bread">听云首屏 / 编辑</div>
+    <div class="preview-header clearfix edit-header" style="min-width: 1810px;">
+        <div class="edit-header-left clearfix">
+            <!--<a class="edit-upload" href="javascript:void(0);">
+                <input class="edit-upload-input" type="file" value="上传LOGO" />
+                <span>上传LOGO</span>
+            </a>-->
+            <!-- 上传logo -->
+            <upload-logo></upload-logo>
+            <!-- 应用名称 -->
+            <div class="edit-header-name">应用名称:JD-移动客户端</div>
+            <!-- key option start-->
+            <key-option optionName="DAU"></key-option>
+            <key-option optionName="keyOption1"></key-option>
+            <key-option optionName="keyOption2"></key-option>
+        </div>
+        <div class="preview-header-right">
+            <a href="javascript:void(0);" class="preview-header-btn">保存</a>
+        </div>
+    </div>
+    <!--首屏区域 str-->
+    <div class="edit-con">
+        <!---->
+        <div class="con clearfix">
+            <div class="con-left con-border">
+                <key-must optionName="平均响应时间"></key-must>
+                <key-must optionName="崩溃"></key-must>
+                <key-must optionName="网络错误"></key-must>
+                <key-must optionName="HTTP状态码"></key-must>
+            </div>
+            <div class="con-middle">
+                <!--区域性能概览 str-->
+                <div class="con-performance con-border">
+                    <!--性能地图 -->
+                    <performance-map></performance-map>
+                    <!--CDN str-->
+                    <div class="per-cdn clearfix">
+                        <ul>
+                            <li><cdn-map></cdn-map></li>
+                            <li><cdn-map></cdn-map></li>
+                            <li><cdn-map></cdn-map></li>
+                        </ul>
+                    </div>
+                    <!--CDN end-->
+                </div>
+                <!--区域性能概览 end-->
+                <div>
+                    <!--活跃用户区域 str-->
+                    <div class="con-active con-border">
+                        <h4 class="con-active-head">活跃用户区域</h4>
+                        <div class="active-chart-wrap">
+                            <!--插件区域 str-->
+                            <div class="active-chart">
+
+                            </div>
+                            <!--插件区域 end-->
+                        </div>
+                        <p class="active-title">TOP5用户活跃区域排行</p>
+                        <div class="active-txt">
+                            <ul>
+                                <li>北京:1000万</li>
+                                <li>上海:999万</li>
+                                <li>香港:95万</li>
+                                <li>广东:998万</li>
+                                <li>深圳:997万</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--活跃用户区域 end-->
+                    <!--劫持 str-->
+                    <div class="con-hijack con-border">
+                        <h4 class="con-active-head">劫持</h4>
+                        <div class="active-chart-wrap hijack-chart">
+
+                        </div>
+                        <div class="hijack-txt">
+                            <ul>
+                                <li>劫持次数(1000次)</li>
+                                <li>劫持率(99%)</li>
+                                <li>反劫持次数(800次)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--劫持 end-->
+                </div>
+            </div>
+            <div class="con-right clearfix">
+                 <key-url [keyUrlList]="keyUrlList" [keyUrlConfig]=""></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <key-url></key-url>
+                <!--关键请求平均响应时间 str-->
+                <div class="con-request con-border">
+                    <h4 class="con-active-head">关键请求平均响应时间</h4>
+                    <!--插件区域 str-->
+                    <div class="request-chart">
+
+                    </div>
+                    <!--插件区域 end-->
+                </div>
+                <!--关键请求平均响应时间 end-->
+            </div>
+        </div>
+        <!---->
+    </div>
+</div>

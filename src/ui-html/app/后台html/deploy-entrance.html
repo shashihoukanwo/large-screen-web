@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>配置-入口</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!--收费提醒 str-->
+	<div>
+		<div class="layer-front-shade"></div>
+		<div class="layer-front">
+			<div class="charge-remind">
+				<p class="charge-p1">尊敬的***您好：</p>
+				<p class="charge-txt"> 此项目为增值收费服务，如果想使用此服务可联系您的销售或者技术支持，也可以留下您的联系方式，我们主动联系您。</p>
+				<div class="clearfix">
+					<span class="charge-ltxt">您的称呼:</span>
+					<div class="charge-box">
+						<input class="charge-input" type="text" placeholder="">
+					</div>
+				</div>
+				<div class="clearfix">
+					<span class="charge-ltxt">您的电话:</span>
+					<div class="charge-box">
+						<input class="charge-input" type="text" placeholder="">
+					</div>
+				</div>
+				<div class="clearfix">
+					<span class="charge-ltxt">所属公司:</span>
+					<div class="charge-box">
+						<input class="charge-input" type="text" placeholder="">
+					</div>
+				</div>
+				<div class="clearfix">
+					<span class="charge-ltxt">所属地区:</span>
+					<div class="crs-check-wrap">
+						<div class="crs-check-box clearfix">
+							<input class="crs-checked" type="text" placeholder="北京">
+							<button class="crs-check-btn" type="button"></button>
+						</div>
+						<div class="crs-check-list">
+							<ul>
+								<li>河南</li>
+								<li class="crs-check-checked">南昌</li>
+								<li>拉萨</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="crs-buttons">
+						<a class="crs-submit" href="javascript:void(0);">提交</a>
+						<a class="crs-cancel" href="javascript:void(0);">取消</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--收费提醒 end-->
+	<div class="header clearfix">
+		<div class="header-left"><img src="images/logo.png"></div>
+		<div class="header-mid">听云性能感知大屏</div>
+		<div class="header-right">
+			<span class="user-icon"></span>
+		</div>
+	</div>
+	<div class="blue-line"></div>
+	<!--创建弹出层 str-->
+	<div>
+		<div class="crs-layer-shade"></div>
+		<div class="crs-layer-front">
+			<div class="create-screen">
+				<h4 class="crs-title">创建</h4>
+				<div class="crs-con">
+					<div class="clearfix">
+						<span class="crs-ltxt">选择产品:</span>
+						<div class="crs-rtxt">
+							<span class="crs-name crs-name-checked">App用户体验</span>
+							<span class="crs-name">网站用户体验</span>
+							<span class="crs-name">模拟用户体验</span>
+						</div>
+					</div>
+					<div class="clearfix">
+						<span class="crs-ltxt">选择应用:</span>
+						<div class="crs-check-wrap">
+							<div class="crs-check-box clearfix">
+								<input class="crs-checked" type="text" placeholder="应用一">
+								<button class="crs-check-btn" type="button"></button>
+							</div>
+							<div class="crs-check-list">
+								<ul>
+									<li>应用名称详情</li>
+									<li class="crs-check-checked">应用名称详情</li>
+									<li>应用名称详情</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix">
+						<span class="crs-ltxt">创建大屏名称:</span>
+						<div class="crs-creat-box">
+							<input class="crs-creat-input" type="text" placeholder="JD应用监测大屏">
+						</div>
+					</div>
+					<div class="crs-buttons">
+						<a class="crs-submit" href="javascript:void(0);">提交</a>
+						<a class="crs-cancel" href="javascript:void(0);">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--创建弹出层 end-->
+	<div class="container-fluid main">
+		<div class="row main-con">
+			<!--未创建 str-->
+			<div class="not-create clearfix">
+				<a class="demo-btn" href="javascript:void(0);">
+					<div class="demo-img"><img src="images/demo-img.png"></div>
+					<span class="demo-shade"></span>
+					<span class="demo-txt">Demo预览</span>
+				</a>
+				<a class="create-btn" href="javascript:void(0);">
+					<span class="create-icon"></span>
+					<h4 class="create-title">创建大屏</h4>
+				</a>
+			</div>
+			<!--未创建 end-->
+			<!--已创建 str-->
+			<div class="already-create clearfix">
+			    <a class="al-demo" href="javascript:void(0);">
+					<div class="ald-img"><img src="images/demo-img.png"></div>
+					<span class="ald-shade"></span>
+					<span class="ald-txt">Demo预览</span>
+				</a>
+				<a class="al-create" href="javascript:void(0);">
+					<span class="alc-icon"></span>
+					<h4 class="alc-title">创建听云大屏</h4>
+				</a>
+			</div>
+			<!--已创建 end-->
+			<!--缩略图列表 str-->
+			<div class="screens-wrap">
+				<!--RUM  str-->
+				<div class="screen-sort-wrap">
+					<h5 class="screen-sort">RUM</h5>
+					<div class="row screen-list">
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+					</div>
+				</div>
+				<!--RUM  end-->
+				<!--APM  str-->
+				<div class="screen-sort-wrap">
+					<h5 class="screen-sort">APM</h5>
+					<div class="row screen-list">
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>					
+					</div>
+				</div>
+				<!--APM  end-->
+				<!--NETWORK  str-->
+				<div class="screen-sort-wrap">
+					<h5 class="screen-sort">NETWORK</h5>
+					<div class="row screen-list">
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>
+						</div>
+						<div class="col-lg-2 col-md-3">
+							<div class="screen-img">
+								<img class="img-responsive" src="images/screen-list.png">
+								<span class="sl-shade"></span>	
+								<span class="sl-title">JD-App应用监测大屏应用监测大屏</span>
+								<a class="del-btn" href="javascript:void(0);"></a>
+							</div>	
+							<button type="button" class="btn btn-default btn-lg btn-block">配置/修改</button>
+							<button type="button" class="btn btn-default btn-lg btn-block">投屏</button>	
+						</div>				
+					</div>
+				</div>
+				<!--NETWORK  end-->
+			</div>
+			<!--缩略图列表 end-->
+		</div>		
+	</div>
+	<!--版权部分 -->
+    <div class="copyright">© 2007-2016  北京基调网络股份有限公司</div>
+</body>
+</html>

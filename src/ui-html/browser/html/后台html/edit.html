@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>首屏编辑</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+</head>
+<body>
+	<div class="header clearfix" style="min-width: 1900px;">
+		<div class="header-left"><img src="images/logo.png"></div>
+		<div class="header-mid">听云性能感知大屏</div>
+		<div class="header-right">
+			<span class="user-icon"></span>
+		</div>
+	</div>
+	<div class="blue-line" style="min-width: 1900px;"></div>
+	<!--header end-->
+	<!--preview-main  str-->
+	<div class="edit-main">
+		<div class="preview-bread">引导页 / 编辑</div>
+		<div class="preview-header clearfix edit-header" style="min-width: 1810px;">
+			<div class="edit-header-left clearfix">
+				<a class="edit-upload" href="javascript:void(0);">
+					<input class="edit-upload-input" type="file" value="上传LOGO" />
+					<span>上传LOGO</span>
+				</a>
+				<div class="edit-header-name">应用名称:JD - Browser 应用性能监测大屏</div>
+				<div class="edit-parameter clearfix">
+					<div class="edit-parameter-txt">日PV:300000</div>
+					<div class="edit-parameter-radios">
+						<label>
+							<input type="radio" name="display"><i></i>展示
+						</label>
+						<label>
+							<input type="radio" name="display"><i></i>隐藏
+						</label>
+					</div>
+				</div>
+				<div class="edit-parameter clearfix">
+					<div class="edit-parameter-txt">参数待定</div>
+					<div class="edit-parameter-radios">
+						<label>
+							<input type="radio" name="display"><i></i>展示
+						</label>
+						<label>
+							<input type="radio" name="display"><i></i>隐藏
+						</label>
+					</div>
+				</div>
+				<div class="edit-parameter clearfix">
+					<div class="edit-parameter-txt">参数待定</div>
+					<div class="edit-parameter-radios">
+						<label>
+							<input type="radio" name="display"><i></i>展示
+						</label>
+						<label>
+							<input type="radio" name="display"><i></i>隐藏
+						</label>
+					</div>
+				</div>
+			</div>
+			<div class="preview-header-right">
+				<a href="javascript:void(0);" class="preview-header-btn">保存</a>
+			</div>
+		</div>
+		<!--首屏区域 str-->
+		<div class="edit-con">
+			<!---->
+			<div class="con clearfix">
+	            <div class="con-left con-border">
+	                <!--平均响应时间 str-->
+	                <div class="con-response">
+	                    <div class="con-head">
+	                        <h2 class="con-htxt">平均响应时间</h2>
+	                        <div class="con-hr">
+	                            <i class="con-hcircle green-circle"></i>
+	                            <span class="con-hnum">1.63s</span>
+	                        </div>
+	                        <div class="con-deploy-wrap">
+	                        	<a class="con-deploy-btn" href="javascript:void(0);">配置</a>
+	                        	<!--配置弹出层 str-->
+	                        	<div class="con-deploy-layer">
+	                        		<div class="con-deploy-ltitle">自定义</div>
+	                        		<div class="con-deploy-lcon">
+	                        			<label>
+											<input type="radio" name="num"><i></i>
+											<span>默认值</span>
+											<span class="con-deploy-green"></span>
+											<span class="con-deploy-txt">< 7s <</span>
+											<span class="con-deploy-red"></span>
+										</label>
+										<label>
+											<input type="radio" name="num"><i></i>
+											<span>自定义</span>
+											<span class="con-deploy-green"></span>
+											<span class="con-deploy-txt"><<</span>
+											<div class="con-deploy-input-wrap">
+												<input type="text" placeholder="7">
+											</div>
+											<span class="con-deploy-txt"><</span>
+											<span class="con-deploy-red"></span>
+											<p class="con-deploy-tips">单位: s</p>
+										</label>
+										<div class="con-deploy-buttons">
+											<a class="con-deploy-submit" href="javascript:void(0);">提交</a>
+											<a class="con-deploy-cancel" href="javascript:void(0);">取消</a>
+									    </div>
+	                        		</div>
+	                        	</div>
+	                        	<!--配置弹出层 end-->
+	                        </div>
+	                    </div>
+	                    <!--图表区域 str-->
+	                    <div class="con-response-chart">
+	                    </div>
+	                    <!--图表区域 end-->
+	                </div>
+	                <!--平均响应时间 end-->
+	                <!--JS错误 str-->
+	                <div class="con-collapse">
+	                    <div class="con-head">
+	                        <h2 class="con-htxt">JS错误</h2>
+	                        <div class="con-hr">
+	                            <i class="con-hcircle red-circle"></i>
+	                            <span class="con-hnum">300</span>
+	                        </div>
+	                        <div class="con-deploy-wrap">
+	                        	<a class="con-deploy-btn" href="javascript:void(0);">配置</a>
+	                        </div>
+	                    </div>
+	                    <div class="con-collapse-chart">
+	                    </div>
+	                </div>
+	                <!--JS错误 end-->
+	                <!--访问成功率 str-->
+	                <div class="con-neterror">
+	                    <div class="con-head">
+	                        <h2 class="con-htxt">访问成功率</h2>
+	                        <div class="con-hr">
+	                            <i class="con-hcircle green-circle"></i>
+	                            <span class="con-hnum">6%</span>
+	                        </div>
+	                        <div class="con-deploy-wrap">
+	                        	<a class="con-deploy-btn" href="javascript:void(0);">配置</a>
+	                        </div>
+	                    </div>
+	                    <div class="con-neterror-chart">
+	                    </div>
+	                </div>
+	                <!--访问成功率 end-->
+	                <!--Ajax状态码 str-->
+	                <div class="con-http">
+	                    <div class="con-head">
+	                        <h2 class="con-htxt">Ajax状态码</h2>
+	                        <div class="con-hr">
+	                            <i class="con-hcircle green-circle"></i>
+	                            <span class="con-hnum">75%</span>
+	                        </div>
+	                        <div class="con-deploy-wrap">
+	                        	<a class="con-deploy-btn" href="javascript:void(0);">配置</a>
+	                        </div>
+	                    </div>
+	                    <div class="con-http-chart">
+	                    </div>
+	                </div>
+	                <!--Ajax状态码 end-->
+	            </div> 
+	            <div class="con-middle">
+	                <!--平均响应时间 str-->
+	                <div class="con-performance con-border">
+	                    <div class="per-map">
+	                        <div class="per-map-title">平均响应时间</div>
+	                        <!--插件区域 str-->
+	                        <div class="per-map-con clearfix">
+	                            <div class="per-map-left">
+	                            	<img src="images/per-map.png">
+	                            </div>
+	                            <div class="per-map-right">
+	                                <div>
+	                                    <span>选择展示地图的类型:</span>
+	                                    <div class="per-map-radio clearfix">
+	                                        <label>
+	                                            <input type="radio" name="map"><i></i>世界地图
+	                                        </label>
+	                                    </div>
+	                                    <div class="per-map-radio clearfix">
+	                                        <label>
+	                                            <input checked="checked" type="radio" name="map"><i></i>中国地图
+	                                        </label>
+	                                    </div>
+	                                    <div class="per-map-radio clearfix">
+	                                        <label>
+	                                            <input type="radio" name="map"><i></i>省份地图
+	                                        </label>
+	                                        <!--省份选择 str-->
+	                                        <div class="per-check-wrap">
+	                                            <div class="per-check-box clearfix">
+	                                                <input class="per-checked" type="text" placeholder="江苏省">
+	                                                <button class="per-check-btn" type="button"></button>
+	                                            </div>
+	                                            <div class="per-check-list">
+	                                                <ul>
+	                                                    <li>应用名称详情</li>
+	                                                    <li class="per-check-checked">应用名称详情</li>
+	                                                    <li>应用名称详情</li>
+	                                                </ul>
+	                                            </div>
+	                                        </div>
+	                                        <!--省份选择 end-->
+	                                    </div>
+	                                </div>
+	                                <div>
+	                                    <span>选择展示地图的类型:</span>
+	                                    <div class="per-map-radio clearfix">
+	                                        <label>
+	                                            <input checked="checked" type="radio" name="color"><i></i>默认值
+	                                        </label>
+	                                    </div>
+	                                    <div class="per-map-radio clearfix">
+	                                        <label>
+	                                            <input type="radio" name="color"><i></i>自定义图例颜色
+	                                        </label>
+	                                        <div class="per-color-box">
+	                                            <input class="per-color-input" type="text" placeholder="">
+	                                        </div>    
+	                                    </div>
+	                                    <div class="per-map-bz">（注:输入红色图例值）</div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                        <!--插件区域 end-->
+	                    </div>
+	                </div>
+	                <!--平均响应时间 end-->
+	      			<!--活跃用户区域 str-->
+	                <div class="con-active con-border">
+	                    <div class="active-map">
+	                        <div class="active-map-title">活跃用户区域</div>
+	                        <!--插件区域 str-->
+	                        <div class="active-map-con">
+	                            <img src="images/active-chart.png">
+	                        </div>
+	                        <!--插件区域 end-->
+	                    </div>
+	                    <div class="active-txt-wrap">
+	                        <ul class="clearfix">
+	                            <li>深圳:100000（PV）</li>
+	                            <li>南京:100000（PV）</li>
+	                            <li>上海:100000（PV）</li>
+	                            <li>北京:100000（PV）</li>
+	                        </ul>
+	                    </div>
+	                    <!--四角 小签str-->
+	                    <i class="tag tag-tl"></i>
+	                    <i class="tag tag-tr"></i>
+	                    <i class="tag tag-bl"></i>
+	                    <i class="tag tag-br"></i>
+	                    <!--四角 小签end-->
+	                </div>
+	                <!--活跃用户区域 end-->
+	            </div> 
+	            <div class="con-right clearfix">
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                    <div class="rsection-head">
+	                        <h4>登录</h4>
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:3s</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:999999</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:999999</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:100%</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="per-cdn-btns">
+	                        <span class="per-grey-line"></span> 
+	                        <a class="per-cdn-del" href="javascript:void(0);">删除</a>
+	                        <a class="per-cdn-edit" href="javascript:void(0);">修改</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                    <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-registered"></i>
+	                        <h4>注册</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    	<!--新增配置弹出层 str-->
+	                    	<div class="rsection-new-layer">
+	                    		<div class="rsection-nl-title clearfix">
+	                    			<h4 class="rsection-nl-tl">新建关键请求</h4>
+	                    			<a class="rsection-nl-tr" href="javascript:void(0);">创建新请求>></a>
+	                    		</div>
+	                    		<div class="rsection-nl-con">
+	                    			<div class="clearfix">
+										<span class="rsection-nl-ltxt">选择类型:</span>
+										<div class="rsection-nl-check-wrap">
+											<div class="rsection-nl-check-box clearfix">
+												<input class="rsection-nl-checked" type="text" placeholder="关键页面">
+												<button class="rsection-nl-check-btn" type="button"></button>
+											</div>
+											<div class="rsection-nl-check-list">
+												<ul>
+													<li>应用名称详情</li>
+													<li class="rsection-nl-check-checked">应用名称详情</li>
+													<li>应用名称详情</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+										<span class="rsection-nl-ltxt">选择应用:</span>
+										<div class="rsection-nl-check-wrap">
+											<div class="rsection-nl-check-box clearfix">
+												<input class="rsection-nl-checked" type="text" placeholder="应用名称">
+												<button class="rsection-nl-check-btn" type="button"></button>
+											</div>
+											<div class="rsection-nl-check-list">
+												<ul>
+													<li>应用名称详情</li>
+													<li class="rsection-nl-check-checked">应用名称详情</li>
+													<li>应用名称详情</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="clearfix">
+										<span class="rsection-nl-ltxt">自定义名称:</span>
+										<div class="charge-box">
+											<input class="charge-input" type="text" placeholder="非必填项">
+										</div>
+									</div>
+									<div class="cdn-new-buttons">
+										<a class="cdn-new-submit" href="javascript:void(0);">提交</a>
+										<a class="cdn-new-cancel" href="javascript:void(0);">取消</a>
+									</div>
+	                    		</div>
+	                    	</div>
+	                    	<!--新增配置弹出层 end-->
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                    <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-cart"></i>
+	                        <h4>加入购物车</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                               <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                    <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-account"></i>
+	                        <h4>结算</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                    <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-home"></i>
+	                        <h4>首页</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                   <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-spike"></i>
+	                        <h4>秒杀</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                   <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-eleven"></i>
+	                        <h4>双11</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                               <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                <!--section str-->
+	                <div class="con-rsection con-border">
+	                   <div class="rsection-head">
+	                        <!-- <i class="con-rectangle color-discount"></i>
+	                        <h4>折扣</h4> -->
+	                    </div>
+	                    <div class="rsection-content clearfix">
+	                        <!--地图插件区域 str-->
+	                        <div class="rsection-cleft">
+	                            <img src="images/section-chart2.png">
+	                        </div>
+	                        <!--地图插件区域 end-->
+	                        <div class="rsection-cright rsection-cright-grey">
+	                            <ul>
+	                                <li>
+	                                    <span>响应时间:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求次数:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功:--</span>
+	                                </li>
+	                                <li>
+	                                    <span>请求成功率:--</span>
+	                                </li>
+	                            </ul>
+	                        </div>
+	                    </div>
+	                    <div class="rsection-new-wrap">
+	                    	<a class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+	                    </div>
+	                </div>
+	                <!--section end-->
+	                 <!--关键请求平均响应时间 str-->
+	                <div class="con-request con-border">
+	                    <h4 class="con-active-head">各请求平均响应时间</h4>
+	                    <!--插件区域 str-->
+	                    <div class="request-chart">
+	                        
+	                    </div>
+	                    <!--插件区域 end-->
+	                </div>
+	                <!--关键请求平均响应时间 end-->
+	            </div> 
+	         </div>
+			<!---->
+		</div>
+	</div>
+	<!--版权 str-->
+	<div class="copyright">© 2007-2016  北京基调网络股份有限公司</div>
+</body>
+</html>

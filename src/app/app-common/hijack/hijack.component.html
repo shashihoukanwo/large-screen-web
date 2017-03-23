@@ -1,0 +1,32 @@
+<div class="con-hijack con-border">
+    <h4 class="con-active-head">劫持</h4>
+    <div class="active-chart-wrap">
+        <!--插件区域 str-->
+        <div id="container" class="hijack-chart">
+            <!--<img src="images/Earth.gif" style="width:124px;height:124px;" />-->
+        </div>
+        <!--插件区域 end-->
+        <!--地域列表 str-->
+        <div class="active-regional">
+            <ul>
+                <li *ngFor="let name of hijackTop">{{name}}</li>
+            </ul>
+        </div>
+        <!--地域列表 end-->
+
+        <!--<span class="hijack-scan"></span>-->
+    </div>
+    <div class="active-txt">
+        <ul>
+            <li>劫持次数({{hijackCount}}次)</li>
+            <li>劫持率({{hijackRate}}%)</li>
+            <li>反劫持次数({{antiCount}}次)</li>
+        </ul>
+    </div>
+    <!--四角 小签str-->
+    <i class="tag tag-tl"></i>
+    <i class="tag tag-tr"></i>
+    <i class="tag tag-bl"></i>
+    <i class="tag tag-br"></i>
+    <!--四角 小签end-->
+</div>

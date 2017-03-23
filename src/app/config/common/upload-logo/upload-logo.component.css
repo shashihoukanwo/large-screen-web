@@ -1,0 +1,21 @@
+.edit-upload{
+    float: left;
+    width: 88px;
+    padding-left: 34px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+.edit-upload:link,.edit-upload:visited{color: #666;background: url(images/file.svg) 14px 7px #eceeee no-repeat;}
+.edit-upload:hover{color: #fff;background: url(images/file-hover.svg) 14px 7px #0085c9 no-repeat;}
+.edit-upload:active{color: #666;background: url(images/file.svg) 14px 7px #eceeee no-repeat;}
+.edit-upload-input{
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}

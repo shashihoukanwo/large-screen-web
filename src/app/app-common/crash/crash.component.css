@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+.tag{
+	display: block;
+	width:6px;
+	height: 6px;
+	background: transparent;
+	border-top: 1px solid #7cc8d1;
+	border-left: 1px solid #7cc8d1;
+	position: absolute;
+}
+.tag-tl{top: -1px;left: -1px;}
+.tag-tr{transform: rotate(90deg); top: -1px;right: -1px;}
+.tag-bl{transform: rotate(-90deg);bottom: -1px;left: -1px;}
+.tag-br{transform: rotate(180deg);bottom: -1px;right: -1px;}
+
+.con-head{height: 18px;line-height: 18px;}
+.con-htxt{font-size: 12px;color: #009fe8;float: left;}
+.con-hr{
+	float: right;
+	color: #9eb2dd;
+	padding: 0px 4px;
+	height: 16px;
+	line-height: 16px;
+	background: rgba(8,26,57,.7);
+	border: 1px solid rgba(3,60,147,.7);
+}
+.con-hcircle{width: 10px;height: 10px;border-radius: 50%;display: inline-block;}
+.green-circle{background: #68b960;}
+.red-circle{background: #ea625d;}
+.con-hnum{margin-left: 12px;}
+.con-collapse{margin-bottom: 20px;padding: 8px 14px 16px 10px;background: #031522;}
+.con-collapse-chart{height: 180px;margin-top: 10px;}
+
+
+
+.container-crash{
+	padding:8px 14px 16px 10px;
+}
+.container-crash.redhigh{
+	background:url('images/collapse-bg.png') no-repeat;
+	background-size: 100% 100%;
+}
+
+.chart-crash{
+	width: 498px;
+	height: 162px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.count-crash{
+	position: relative;
+	float: left;
+	width: 87px;
+	height: 162px;
+	background: url('images/collapse-left.png') no-repeat;
+	background-size: 100% 100%;;
+}
+
+.crash-canvas{
+	float: left;
+	width: 322px;
+	height: 144px;
+	border: 1px solid #06275a;
+	margin-top: 8px;
+}
+.users-crash{
+	position: relative;
+	float: left;
+	width: 87px;
+	height: 162px;
+	background: url('images/collapse-right.png') no-repeat;
+	background-size: 100% 100%;;
+}
+
+.crash-circle{
+	position: absolute;
+	top: 20px;
+	width: 52px;
+	height: 52px;
+	background: url('images/collapse-circle.svg') no-repeat;
+	-webkit-animation: circle 1600ms infinite linear;
+}
+.crash-circle.count{
+	left: 14px
+}
+.crash-circle.users{
+	left: 22px; 
+}
+@-webkit-keyframes circle{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.crash-inner-circle{
+	position: absolute;
+	top: 28px;
+	width: 36px;
+	height: 36px;
+	background: url('images/collapse-circle2.svg') no-repeat;
+	-webkit-animation: innercircle 1000ms infinite linear;
+}
+@-webkit-keyframes innercircle{
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
+.crash-inner-circle.count{
+	left: 22px;
+}
+.crash-inner-circle.users{
+	left: 30px;
+}
+.crash-icon{
+	position: absolute;
+	width: 22px;
+	height: 24px;
+	top: 34px;
+}
+.crash-icon.count{
+	background: url('images/collapse-icon01.png') no-repeat;
+	left: 29px;
+}
+.crash-icon.users{
+	width: 24px;
+	background: url('images/collapse-icon02.png') no-repeat;
+	left: 36px;
+	top: 35px;
+}
+.crash-arrow{
+	position: absolute;
+	bottom: 18px;
+	font-size: 12px;
+	color: #9eb2dd;
+	margin-left: 16px;
+}
+.crash-arrow.users{
+	margin-left: 24px;
+}
+.crash-arrow .title{
+	display: block;
+	margin-top: 8px;
+}
+.crash-arrow .num{
+	display: block;
+	text-align: center;
+	color: #ea625d;
+}
+
+
+.chartleg{
+	width: 54px;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #8da1ca;
+	height: 18px;
+}
+.chartleg .leg{
+	width: 12px;
+	height: 8px;
+	background: #ea625d;
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+.chartleg span{
+	margin-left: 6px;
+	color: #8da1ca;
+}
+.carrow{
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin-left: 16px;
+	border: 2px solid transparent;
+	border-top: 2px solid #0d274c;
+	border-left: 2px solid #0d274c;
+	-webkit-transform: rotate(-135deg);
+	margin-top: -6px;
+}
+.ca0{
+	-webkit-animation: crasharrow 450ms 0ms infinite ease;
+}
+.ca1{
+	border-top: 2px solid #163996;
+	border-left: 2px solid #163996;
+	-webkit-animation: crasharrow 450ms 150ms infinite ease;
+}
+.ca2{
+	border-top: 2px solid #2a5d99;
+	border-left: 2px solid #2a5d99;
+	-webkit-animation: crasharrow 450ms 300ms infinite ease;
+}
+@-webkit-keyframes crasharrow{
+	0% {
+		border-top: 2px solid #0d274c;
+		border-left: 2px solid #0d274c;
+	}
+	50% {
+		border-top: 2px solid #163996;
+		border-left: 2px solid #163996;
+	}
+	100% {
+		border-top: 2px solid #2a5d99;
+		border-left: 2px solid #2a5d99;
+	}
+}

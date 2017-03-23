@@ -1,0 +1,47 @@
+.edit-parameter{
+    float: left;
+    margin-left:30px;
+}
+
+.edit-parameter-txt{
+    float: left;
+    width: 94px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    background: #eceeee;
+    border-radius: 4px;
+}
+.edit-parameter-radios{
+    float: left;
+    margin-left: 8px;
+}
+.edit-parameter-radios label{
+    display: block;
+    margin-bottom: 8px;
+    height: 12px;
+    line-height: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.edit-parameter-radios input{
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    z-index: 10;
+    cursor: pointer;
+}
+.edit-parameter-radios i{
+    display: inline-block;
+    width: 12px; height: 12px;
+    margin-right: 2px;
+    background: url(images/radio.svg) no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+.edit-parameter-radios input:checked+i{
+    background: url(images/radio-check.svg) no-repeat;
+}

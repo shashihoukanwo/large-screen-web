@@ -1,0 +1,25 @@
+
+<div class="container-http">
+	<div #httpcontainer class="con-http-chart" style="z-index: 1;">
+		<canvas #httpcode class="httpcanvas"></canvas>
+	</div>
+	
+	<div class="con-head" style="position:absolute;width:498px;z-index:2;">
+        <h2 class="con-htxt">HTTP状态码</h2>
+        <div class="con-hr">
+            <i class="con-hcircle green-circle" [ngClass]="{'red-circle':redCircle}"></i>
+            <span class="con-hnum">{{rateValue}}%</span>
+        </div>
+    </div>
+	<div class="code400"><span class="rate">{{badRequestText}}</span><span class="num">4xx</span></div>
+	<div class="code500"><span class="rate">{{badServerText}}</span><span class="num">5xx</span></div>
+	<div class="code200"><span class="rate">{{successText}}</span><span class="num">2xx</span></div>
+	<div class="code300"><span class="rate">{{redirectText}}</span><span class="num">3xx</span></div>
+	
+	<!--四角 小签str-->
+    <i class="tag tag-tl"></i>
+    <i class="tag tag-tr"></i>
+    <i class="tag tag-bl"></i>
+    <i class="tag tag-br"></i>
+    <!--四角 小签end-->
+</div>

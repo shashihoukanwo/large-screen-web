@@ -1,0 +1,49 @@
+<div class="container-crash " [ngClass]="{'redhigh':redCircle}">
+	<div class="con-head">
+	    <h2 class="con-htxt">崩溃</h2>
+	    <div class="con-hr">
+	        <i class="con-hcircle green-circle" [ngClass]="{'red-circle':redCircle}"></i>
+	        <span class="con-hnum">{{rateValue}}</span>
+	    </div>
+	</div>
+	<div class="chart-crash">
+		<div class="count-crash">
+			<div class="crash-circle count"></div>
+			<div class="crash-inner-circle count"></div>
+			<div class="crash-icon count"></div>
+			<div class="crash-arrow">
+				<span class="carrow ca0"></span>
+				<span class="carrow ca1"></span>
+				<span class="carrow ca2"></span>
+			
+				<span class="title">崩溃次数</span>
+				<span class="num">{{crashNum}}</span>
+			</div>
+		</div>
+		<div #crashmain class="crash-canvas"></div>
+		<div class="users-crash">
+			<div class="crash-circle users"></div>
+			<div class="crash-inner-circle users"></div>
+			<div class="crash-icon users"></div>
+			<div class="crash-arrow users">
+				<span class="carrow ca0"></span>
+				<span class="carrow ca1"></span>
+				<span class="carrow ca2"></span>
+			
+				<span class="title">影响用户</span>
+				<span class="num">{{crashUsers}}</span>
+			</div>
+		</div>
+	</div>
+	<div class="chartleg">
+		<i class="leg"></i>
+		<span >崩溃率</span>
+	</div>
+	
+	<!--四角 小签str-->
+    <i class="tag tag-tl"></i>
+    <i class="tag tag-tr"></i>
+    <i class="tag tag-bl"></i>
+    <i class="tag tag-br"></i>
+    <!--四角 小签end-->
+</div>

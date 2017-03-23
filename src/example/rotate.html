@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3动画（360度旋转、旋转放大、放大、移动）</title>
+    <meta name="keywords" content="CSS3动画,CSS3过渡 " />
+    <meta name="description" content="CSS3动画（360度旋转、旋转放大、放大、移动）" />
+
+    <style type="text/css">
+        div{
+            width:120px;
+            height:120px;
+            line-height:120px;
+            margin: 20px;
+            background-color: #5cb85c;
+            float: left;
+            font-size: 12px;
+            text-align: center;
+            color:orangered;
+        }
+        @-webkit-keyframes rotate {
+            0%,
+            100% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @-moz-keyframes rotate {
+            0%,
+            100% {
+                -moz-transform: rotate(0deg);
+            }
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        @-o-keyframes rotate {
+            0%,
+            100% {
+                -o-transform: rotate(0deg);
+            }
+            100% {
+                -o-transform: rotate(360deg);
+            }
+        }
+        @-ms-keyframes rotate {
+            0%,
+            100% {
+                -ms-transform: rotate(0deg);
+            }
+            100% {
+                -ms-transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate {
+            0%,
+            100% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .img1{//为了尽可能兼容各个浏览器
+        -moz-animation: rotate 4s linear infinite;
+            -webkit-animation: rotate 4s linear infinite;
+            -o-animation: rotate 4s linear infinite;
+            -ms-animation: rotate 4s linear infinite;
+            animation: rotate 4s linear infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="img1">效果一：360°旋转 </div>
+<div class="img2">效果二：放大</div>
+<div class="img3">效果三：旋转放大</div>
+<div class="img4">效果四：上下左右移动 </div><br/>
+<p style="clear: both"><a style="font-size: 24px;color: red;" href="http://www.vr2066.com">未来50年，VR的世界，点击这里让我们一起见证!</a><br/>
+    <a style="font-size: 24px;color: red;" href="http://www.vr2066.com">VR虚拟现实</a></p>
+</body>
+</html>

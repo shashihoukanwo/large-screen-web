@@ -1,0 +1,51 @@
+<div class="con-performance con-border">
+    <div class="per-map">
+        <div class="per-map-title">区域性能概览</div>
+        <!--dau str-->
+        <div class="per-dau">
+            <div class="per-dau-title"></div>
+            <counter [value]="DAU"></counter>
+        </div>
+        <!--dau end-->
+        <!--插件区域 str-->
+        <div class="per-map-con">
+
+            <div class="per-trapezoid-wrap">
+                <div class="per-rectangle" [hidden]="!isReady">
+                    <scaleline [number]="16"></scaleline>
+                </div>
+                <div class="per-colorrect" [hidden]="!isReady">
+                    <colorlump [value]="maxValue" [colors]="colors"></colorlump>
+                </div>
+                <!--只是底层效果展示 里面不要放置内容 str-->
+                <div class="per-trapezoid" [hidden]="!isReady">
+                    <div class="per-trapezoid-angle"></div>
+                </div>
+                <!--只是底层效果展示 里面不要放置内容 end-->
+            </div>
+            <div #appCenterMap style="width: 100%;height: 100%;"></div>
+        </div>
+        <!--插件区域 end-->
+    </div>
+    <!--CDN str-->
+    <div class="per-cdn clearfix">
+        <ul>
+            <li>
+                <cdn-map [options]="options"></cdn-map>
+            </li>
+            <li>
+                <cdn-map [options]="options"></cdn-map>
+            </li>
+            <li>
+                <cdn-map [options]="options"></cdn-map>
+            </li>
+        </ul>
+    </div>
+    <!--CDN end-->
+    <!--四角 小签str-->
+    <i class="tag tag-tl"></i>
+    <i class="tag tag-tr"></i>
+    <i class="tag tag-bl"></i>
+    <i class="tag tag-br"></i>
+    <!--四角 小签end-->
+</div>

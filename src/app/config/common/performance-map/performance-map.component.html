@@ -1,0 +1,62 @@
+<div class="per-map">
+    <div class="per-map-title">区域性能概览</div>
+    <!--插件区域 str-->
+    <div class="per-map-con clearfix">
+        <div class="per-map-left">
+            <img [src]="mapSource">
+        </div>
+        <div class="per-map-right">
+            <div>
+                <span>选择展示地图的类型:</span>
+                <div class="per-map-radio clearfix">
+                    <label>
+                        <input type="radio" name="map"><i></i>世界地图
+                    </label>
+                </div>
+                <div class="per-map-radio clearfix">
+                    <label>
+                        <input checked="checked" type="radio" name="map"><i></i>中国地图
+                    </label>
+                </div>
+                <div class="per-map-radio clearfix">
+                    <label>
+                        <input type="radio" name="map"><i></i>省份地图
+                    </label>
+                    <!--省份选择 str-->
+                    <div class="per-check-wrap">
+                        <div class="per-check-box clearfix">
+                            <input class="per-checked" type="text" placeholder="江苏省">
+                            <button class="per-check-btn" type="button"></button>
+                        </div>
+                        <div class="per-check-list">
+                            <ul>
+                                <li>应用名称详情</li>
+                                <li class="per-check-checked">应用名称详情</li>
+                                <li>应用名称详情</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--省份选择 end-->
+                </div>
+            </div>
+            <div>
+                <span>选择展示地图的类型:</span>
+                <div class="per-map-radio clearfix">
+                    <label>
+                        <input checked="checked" type="radio" name="color"><i></i>默认值
+                    </label>
+                </div>
+                <div class="per-map-radio clearfix">
+                    <label>
+                        <input type="radio" name="color"><i></i>自定义图例颜色
+                    </label>
+                    <div class="per-color-box">
+                        <input class="per-color-input" type="text" placeholder="">
+                    </div>
+                </div>
+                <div class="per-map-bz">（注:输入红色图例值）</div>
+            </div>
+        </div>
+    </div>
+    <!--插件区域 end-->
+</div>

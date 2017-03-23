@@ -1,0 +1,71 @@
+<div class="con-rsection con-border">
+    <div class="rsection-head">
+         <!--<i class="con-rectangle color-registered"></i>-->
+        <h4>{{keyUrlConfig.name}}</h4>
+    </div>
+    <div class="rsection-content clearfix">
+        <!--地图插件区域 str-->
+        <div class="rsection-cleft">
+            <img src="../app/config/common/key-url/images/section-chart2.png">
+        </div>
+        <!--地图插件区域 end-->
+        <div class="rsection-cright rsection-cright-grey">
+            <ul>
+                <li>
+                    <span>响应时间:--</span>
+                </li>
+                <li>
+                    <span>请求次数:--</span>
+                </li>
+                <li>
+                    <span>请求成功:--</span>
+                </li>
+                <li>
+                    <span>请求成功率:--</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div [style.display]="flag ? 'block' : 'none'" class="per-cdn-btns">
+        <span class="per-grey-line"></span>
+        <a class="per-cdn-del" href="javascript:void(0);">删除</a>
+        <a (click)="show('configShowFlag')" class="per-cdn-edit" href="javascript:void(0);">修改</a>
+    </div>
+    <div [style.display]="!flag ? 'block' : 'none'" class="rsection-new-wrap">
+        <a (click)="show('configShowFlag')" class="per-cdn-new" href="javascript:void(0);">新增配置</a>
+    </div>
+</div>
+<!--新增配置弹出层 str-->
+<div [style.display]="configShowFlag ? 'block' : 'none'" class="rsection-new-layer" style="display: none">
+    <div class="rsection-nl-title clearfix">
+        <h4 class="rsection-nl-tl">快速选择关键元素</h4>
+        <a class="rsection-nl-tr" href="javascript:void(0);">创建新请求>></a>
+    </div>
+    <div class="rsection-nl-con">
+        <div class="clearfix">
+            <span class="rsection-nl-ltxt">关键元素:</span>
+            <div class="rsection-nl-check-wrap">
+                <div (click)="show('keyUrlListFlag')" class="rsection-nl-check-box clearfix">
+                    <input  class="rsection-nl-checked" type="text" placeholder="关键元素" value="{{keyUrlConfig.keyUrlName}}">
+                    <button class="rsection-nl-check-btn" type="button"></button>
+                </div>
+                <div [style.display]="keyUrlListFlag ? 'block' : 'none'" class="rsection-nl-check-list">
+                    <ul *ngFor="let keyUrl of keyUrlList">
+                        <li (click)="choseKeyUrl(keyUrl)">{{keyUrl.name}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <span class="rsection-nl-ltxt">创建大屏名称:</span>
+            <div class="charge-box">
+                <input [(value)] = "keyUrlConfig.name" class="charge-input" type="text" placeholder="" >
+            </div>
+        </div>
+        <div class="cdn-new-buttons">
+            <a (click)="submit()" class="cdn-new-submit" href="javascript:void(0);">提交</a>
+            <a (click)="hide('configShowFlag')" class="cdn-new-cancel" href="javascript:void(0);">取消</a>
+        </div>
+    </div>
+</div>
+<!--新增配置弹出层 end-->

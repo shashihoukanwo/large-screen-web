@@ -1,0 +1,197 @@
+/*平均响应时间*/
+.con-head{height: 18px;line-height: 18px;margin-bottom: 14px;}
+.con-htxt{font-size: 14px;color: #666;float: left;}
+.con-hr{
+    float: right;
+    color: #666;
+    width: 60px;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    background: #eceeee;
+    border-radius: 2px;
+}
+.con-hcircle{width: 10px;height: 10px;border-radius: 50%;display: inline-block;}
+.green-circle{background: #68b960;}
+.con-hnum{margin-left: 12px;}
+.con-response{margin-bottom: 48px;padding: 10px 10px 20px 14px;}
+.con-response-chart{height: 184px;}
+
+/*网络错误*/
+.con-head{height: 18px;line-height: 18px;margin-bottom: 14px;}
+.con-htxt{font-size: 14px;color: #666;float: left;}
+.con-hr{
+    float: right;
+    color: #666;
+    width: 60px;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    background: #eceeee;
+    border-radius: 2px;
+}
+.con-hcircle{width: 10px;height: 10px;border-radius: 50%;display: inline-block;}
+.green-circle{background: #68b960;}
+.con-hnum{margin-left: 12px;}
+.con-neterror{margin-bottom: 40px;padding: 8px 10px 16px 14px;background: #fff;}
+.con-neterror-chart{height: 230px;margin-top: 10px;padding-left: 8px;}
+
+/*HTTP状态码*/
+.con-head{height: 18px;line-height: 18px;margin-bottom: 14px;}
+.con-htxt{font-size: 14px;color: #666;float: left;}
+.con-hr{
+    float: right;
+    color: #666;
+    width: 60px;
+    padding-left: 8px;
+    height: 20px;
+    line-height: 20px;
+    background: #eceeee;
+    border-radius: 2px;
+}
+.con-hcircle{width: 10px;height: 10px;border-radius: 50%;display: inline-block;}
+.green-circle{background: #68b960;}
+.con-hnum{margin-left: 12px;}
+.con-http{padding: 10px 10px 8px 14px;}
+.con-http .con-head{position: relative;z-index: 100;}
+.http-bg{
+    position: absolute;
+    background: url(images/http-bg.svg) no-repeat;
+    width: 504px;
+    height: 216px;
+    left: 8px;
+    top: 8px;
+}
+.con-http-chart{height: 206px;margin-top: 10px;}
+.per-map{padding-bottom: 28px;}
+
+/*弹窗样式 start*/
+.con-deploy-wrap{position: relative;float: right;}
+.con-deploy-layer{
+    position: absolute;
+    width: 240px;
+    top: 30px;
+    left: 0px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+    background: #fff;
+    z-index: 100;
+}
+.con-deploy-ltitle{
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #cbcbcb;
+    padding-left: 18px;
+    font-size: 14px;
+}
+.con-deploy-lcon{
+    padding: 30px 0 40px 30px;
+}
+
+.con-deploy-lcon label{
+    display: block;
+    margin-bottom: 20px;
+    height: 12px;
+    line-height: 12px;
+    position: relative;
+    cursor: pointer;
+}
+.con-deploy-lcon>label>input{
+    position: absolute;
+    top: 0;
+    left:0;
+    opacity: 0;
+    filter:alpha(opacity=0);
+    z-index: 10;
+    cursor: pointer;
+}
+.con-deploy-lcon i{
+    display: inline-block;
+    width: 12px; height: 12px;
+    margin-right: 2px;
+    background: url(images/radio.svg) no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+
+}
+.con-deploy-lcon input:checked+i{
+    background: url(images/radio-check.svg) no-repeat;
+}
+.con-deploy-green{
+    width: 12px;
+    height: 12px;
+    background: #68b960;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 14px;
+    margin-right: 1px;
+}
+.con-deploy-red{
+    width: 12px;
+    height: 12px;
+    background: #dd605a;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-left: 2px;
+}
+.con-deploy-txt{display: inline-block;}
+.con-deploy-input-wrap{
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 4px;
+    border: 1px solid #999;
+    text-align: center;
+    position: relative;
+    margin: 0 6px;
+
+}
+.con-deploy-input-wrap input{color: #666;border: none;outline: none;width: 100%;text-align: center;}
+.con-deploy-input-wrap input:focus{outline: none;}
+.con-deploy-input-wrap input::-webkit-input-placeholder{color: #666;}
+.con-deploy-input-wrap input:-moz-placeholder{color: #666;}
+.con-deploy-input-wrap input:-moz-placeholder{color: #666;}
+.con-deploy-input-wrap input:-ms-input-placeholder{color: #666;}
+.con-deploy-tips{color: #999;margin-left: 100px;margin-top: 6px;}
+.con-deploy-buttons{margin-top: 52px;padding-left: 20px;}
+.con-deploy-submit,.con-deploy-cancel{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+.con-deploy-submit:link,.con-deploy-submit:visited{background: #0085C9;color: #fff;}
+.con-deploy-submit:hover{background: #339dd4;}
+.con-deploy-submit:active{background: #0085C9;}
+.con-deploy-cancel:link,.con-deploy-cancel:visited{background: #ECEEEE;color: #666;}
+.con-deploy-cancel:hover{background: #f1f1f1;}
+.con-deploy-cancel:active{background: #ECEEEE;}
+
+
+
+.con-deploy-btn{
+    display: block;
+    margin-right: 6px;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #eceeee;
+    color: #666;
+    border-radius: 2px;
+}
+.con-deploy-btn:link,.con-deploy-btn:visited{background: #eceeee;color: #666;}
+.con-deploy-btn:hover{background: #0085c9;color: #fff;}
+.con-deploy-btn:active{background: #eceeee;color: #666;}
+/*弹窗样式 end*/

@@ -1,0 +1,46 @@
+<div class="con-response">
+    <div class="con-head">
+        <h2 class="con-htxt">{{optionName}}</h2>
+        <div class="con-hr">
+            <i class="con-hcircle green-circle"></i>
+            <span class="con-hnum">1.63s</span>
+        </div>
+        <div class="con-deploy-wrap">
+            <a class="con-deploy-btn" href="javascript:void(0);">配置</a>
+            <!--配置弹出层 str-->
+            <div class="con-deploy-layer" style="display:none">
+                <div class="con-deploy-ltitle">自定义</div>
+                <div class="con-deploy-lcon">
+                    <label>
+                        <input type="radio" name="num"><i></i>
+                        <span>默认值</span>
+                        <span class="con-deploy-green"></span>
+                        <span class="con-deploy-txt">< 1% <</span>
+                        <span class="con-deploy-red"></span>
+                    </label>
+                    <label>
+                        <input type="radio" name="num"><i></i>
+                        <span>自定义</span>
+                        <span class="con-deploy-green"></span>
+                        <span class="con-deploy-txt"><</span>
+                        <div class="con-deploy-input-wrap">
+                            <input type="text" placeholder="1%">
+                        </div>
+                        <span class="con-deploy-txt"><</span>
+                        <span class="con-deploy-red"></span>
+                        <p class="con-deploy-tips">{{optionName}}</p>
+                    </label>
+                    <div class="con-deploy-buttons">
+                        <a class="con-deploy-submit" href="javascript:void(0);">提交</a>
+                        <a class="con-deploy-cancel" href="javascript:void(0);">取消</a>
+                    </div>
+                </div>
+            </div>
+            <!--配置弹出层 end-->
+        </div>
+    </div>
+    <!--图表区域 str-->
+    <div class="con-response-chart">
+    </div>
+    <!--图表区域 end-->
+</div>

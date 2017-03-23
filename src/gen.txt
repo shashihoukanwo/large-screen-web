@@ -1,0 +1,10 @@
+		let a=[];
+		let start = 1487926920000;
+		let step = 1000*60;
+		for(let i=0;i<30;i++){
+			var y=Math.round(Math.random()*100);
+			a.push({x:start,y:y});
+			start+=step;
+		}
+
+		console.log(JSON.stringify(a));
